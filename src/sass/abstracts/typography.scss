@@ -1,12 +1,14 @@
-$ff-sans:'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+$ff-sans:"Manrope", sans-serif;
 
 $font-sizes: (
-    900: 3.75rem,
     800: 3rem,
-    600: 1.5rem,
-    500: 1.3125rem,
+    600: 2.5rem,
+    500: 2rem,
     400: 1.125rem,
+    300: 0.9375rem,
 );
 
 $fw-400: 400;
-$fw-700: 700;
+$fw-xblod: 800;

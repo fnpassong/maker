@@ -1,10 +1,19 @@
 @use 'sass:map';
 @use './colors' as *;
+@use './typography' as *;
 
 @function clr($color, $shade) {
     @if map.has-key($colors, $color, $shade) {
         @return map.get($colors, $color, $shade); 
     } @else {
         @error '$colors does not have that color!'
+    }
+}
+
+@function fs($size-value) {
+    @if map.has-key($font-sizes, $size-value) {
+        @return map.get($font-sizes, $size-value);
+    } @else {
+        @error '#{$size-value} no esta registrado'
     }
 }

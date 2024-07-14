@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+body {
+    font-family: $ff-sans;
+    font-size: fs(300);
+    color: clr(primary, normalgray);
+    background-color: clr(primary, theDarkblue);
+}

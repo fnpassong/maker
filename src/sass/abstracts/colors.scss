@@ -1,14 +1,26 @@
 
 $colors : (
-    neutral: (
-        light: white,
-        normal: gray,
-        dark: black
+    primary: (
+        theDarkblue: hsl(230, 60%, 8%),
+        theLightblue: #093f68,
+        normalgray: #777f98
     ),
 
-    primary: (
-        light: lightblue,
-        normal: blue,
-        dark: darkblue,
+    secondary: (
+        thewhite: #fff,
+        'weirdblue': #3ee9e5,
+       ' error': #ff2965,
     ),
 );
+
+
+// $colors:(
+//     neutral: (
+//         100:#fff,
+//         900: #1f3049,
+//     ),
+
+//     primary: (
+//         400: #0066ff,
+//     )
+// );
