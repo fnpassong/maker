@@ -1,0 +1,63 @@
+@use '../abstracts/'as *;
+
+.main {
+    &__wrapper {
+        display: grid;
+        grid-template-areas: '. logo .' 
+                            'imagen imagen imagen';
+    }
+
+    .logo {
+        grid-area: logo;
+        padding-block-start: size(40);
+        padding-block-end: 4.0625rem;
+    }
+
+    &__many-parts {
+        grid-area: imagen;
+
+        display: grid;
+       
+    }
+
+
+    &__img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background-image: url(../../assets/illustration-hero-mobile.png);
+        background-size: contain;
+
+        
+    }
+
+    &__text-area {
+        text-align: center;
+        margin-block-start: 1.5rem;
+      
+    }
+
+    &__title {
+        text-align: center;
+        line-height: 40px;
+        color: clr(secondary, thewhite);
+        font-size: fs(500);
+
+        span {
+            color: clr(secondary, weirdblue);
+        }
+    }
+
+    &__paragraph {
+        margin-block: size(20);
+      
+    }
+
+    &__scroll {
+       
+        margin-inline: auto;
+    }
+
+
+  
+   
+}

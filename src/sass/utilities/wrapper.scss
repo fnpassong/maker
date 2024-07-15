@@ -1,0 +1,8 @@
+
+
+.wrapper {
+    --gap: 3rem;
+    --max-width: 23.4375rem;
+    width: min(100% - var(--gap), var(--max-width));
+    margin-inline: auto;
+}
