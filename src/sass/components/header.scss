@@ -16,7 +16,7 @@
     &__many-parts {
         grid-area: imagen;
 
-        display: grid;
+        // display: grid;
        
     }
 
@@ -47,6 +47,10 @@
         }
     }
 
+    &__images {
+        position: relative;
+    }
+
     &__paragraph {
         margin-block: size(20);
       
@@ -55,6 +59,65 @@
     &__scroll {
        
         margin-inline: auto;
+    }
+
+    @include mq(45em) {
+
+        .logo {
+            margin-inline-start: 2.4375rem;
+        }
+
+        &__wrapper {
+            grid-template-areas: 'logo . .' 
+            'imagen imagen imagen';
+        }
+        &__images {
+            display: grid;
+            grid-template-columns: 9.8125rem 1fr 9.8125rem;
+            grid-template-areas: 'mainLeft textArea  mainRight'
+                                 'mainLeft textArea  mainRight ';
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__left {
+            grid-area: mainLeft;
+           
+            height: 356px;
+            background-image: url(../../assets/illustration-hero-left.svg);
+            background-size: cover;
+            background-position: 158px;
+
+            
+        }
+
+        &__right {
+            grid-area: mainRight;
+           
+            height: 356px;
+            background-image: url(../../assets/illustration-hero-right.svg);
+            background-size: cover;
+        }
+
+        &__text-area {
+            grid-area: textArea;
+            
+            &::after {
+                position: absolute;
+                content: '';
+                width: 400px;
+                aspect-ratio: 1;
+                background-image: url(../../assets/bg-hero-squiggle.svg);
+                background-size: cover;
+                inset: 0;
+                
+                margin-inline: auto;
+            }
+        }
+
+
     }
    
 }

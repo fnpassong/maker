@@ -11,6 +11,7 @@ const Header = () => {
             <div className="main__many-parts">
                 <div className="main__images">
                     <div className="main__img"></div>
+                    <div className="main__left"></div>
                     <div className="main__right"></div>
                     <div className="main__text-area wrapper">
                     <h2 className="main__title">Get paid for the work you <span>love</span> to do.</h2>
