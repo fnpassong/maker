@@ -10,7 +10,7 @@
     .logo {
         grid-area: logo;
         padding-block-start: size(40);
-        padding-block-end: 4.0625rem;
+        padding-block-end: 65px;
     }
 
     &__many-parts {
@@ -56,8 +56,5 @@
        
         margin-inline: auto;
     }
-
-
-  
    
 }
