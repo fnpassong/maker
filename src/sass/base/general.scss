@@ -6,3 +6,7 @@ body {
     color: clr(primary, normalgray);
     background-color: clr(primary, theDarkblue);
 }
+
+section + section {
+    margin-block-start: 144px;
+}

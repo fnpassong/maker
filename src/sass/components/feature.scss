@@ -1,0 +1,42 @@
+@use '../abstracts/' as *;
+
+.card-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    
+
+}
+
+.card {
+    &:not(:last-child) {
+        margin-block-end: 3.5rem;
+    }
+
+    &__content {
+        display: grid;
+        place-items: center;
+
+        margin-block-start: 32px;
+
+        & > img {
+            padding: 0.9375rem;
+            background-color: clr(primary, theLightblue);
+            border-radius: 50% 25% 35% 25%;
+        }
+    }
+
+    &__title {
+        color: clr(secondary, thewhite);
+        font-weight: $fw-xbold;
+        font-size: fs(400);
+
+        margin-block-start: size(32);
+        margin-block-end: size(12);
+    }
+
+    &__paragraph {
+        line-height: 1.5625rem;
+    }
+}
