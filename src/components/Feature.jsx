@@ -4,9 +4,9 @@ import '../sass/components/feature.scss';
 
 const Feature = () => {
   return (
-    <section className="feature wrapper">
+    <section className="feature">
 
-      <div className="card-container">
+      <div className="card-container wrapper" data-width='tablet'>
         {
           FeatureData.map((data)=> {
             return(
