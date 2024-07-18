@@ -5,7 +5,7 @@ import figura from '../assets/icon-paid.svg';
  
  const Plans = () => {
    return (
-     <section className="plans wrapper">
+     <section className="plans wrapper" data-width='tablet'>
         <h2 className="plans__title clr-secondary-thewhite">Our pricing plans</h2>
         <p className="plans__paragraph">
         We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get started.

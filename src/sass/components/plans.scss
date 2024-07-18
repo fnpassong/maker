@@ -99,6 +99,19 @@ ul {
    }
 }
 
+@include mq(45em) {
+   
+   .wrapper[data-width='tablet'] {
+      --gap: 12.25rem;
+      --max-width:45em
+   }
+
+   .container-articles {
+      max-width:445px;
+      margin-inline: auto;
+   }
+   
+}
 
 
 
