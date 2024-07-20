@@ -63,6 +63,12 @@
     background-color: clr(secondary, weirdblue);
     font-weight: $fw-xbold;
     color: clr(primary, theLightblue);
+
+    &:hover {
+        background-color: clr(primary, theDarkblue);
+        border: 3px solid clr(primary, theLightblue);
+        color: clr(secondary, thewhite);
+    }
 }
 
 
@@ -70,6 +76,9 @@
 .boton-area:has(button) button:nth-of-type(1) {
     background-color: clr(primary, theLightblue);
     color: clr(secondary, thewhite);
+
+
+   
 }
 
 
