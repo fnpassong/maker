@@ -1,0 +1,75 @@
+@use '../abstracts/' as *;
+
+.footer {
+    padding-block-end: 150px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+
+    &__text {
+        margin-block-end: 31px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width:584px;
+            height: 80px;
+            background-image: url(../../assets/bg-footer-squiggle.svg);
+            background-size: cover;
+            inset:0; 
+      
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: $fw-xbold;
+        font-size: fs(450);
+        line-height: 1.5;
+        
+        span {
+            display: block;
+        }
+    }
+
+    .boton-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & > * {
+            border: 0;
+            width: 100%;
+            padding: 1em 1.5em;
+            border-radius: 15px;
+
+        }
+
+        & > * + * {
+            margin-block-start: 24px;
+        }
+    }
+
+}
+
+// .boton-area button:nth-type(1)  {
+//     background-color: red;
+// }
+
+.boton-area > * {
+    background-color: clr(secondary, weirdblue);
+    font-weight: $fw-xbold;
+    color: clr(primary, theLightblue);
+}
+
+
+
+.boton-area:has(button) button:nth-of-type(1) {
+    background-color: clr(primary, theLightblue);
+    color: clr(secondary, thewhite);
+}
+
+
