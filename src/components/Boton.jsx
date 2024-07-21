@@ -1,8 +1,8 @@
-import React from 'react'
+import '../sass/components/boton.scss';
 
 const Boton = ({texto}) => {
   return (
-    <button>{texto}</button>
+    <button className='boton'>{texto}</button>
   )
 }
 

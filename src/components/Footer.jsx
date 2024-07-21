@@ -10,7 +10,7 @@ const Footer = () => {
   }
 
   return (
-    <section className="footer wrapper">
+    <section className="footer wrapper" data-width='tablet'>
       <div className="footer__wrapper">
         <div className="footer__text">
           <h2 className='footer__title clr-secondary-thewhite'>Get notified when <span>we launch</span> </h2>
