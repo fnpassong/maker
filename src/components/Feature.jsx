@@ -10,7 +10,7 @@ const Feature = () => {
         {
           FeatureData.map((data)=> {
             return(
-              <div key={data.id} className= 'card'>
+              <div key={data.id} className= {`card card-${data.id}`}>
                 <div className="card__content">
                   <img src={data.img} alt="" />
                   <div className="card__text">

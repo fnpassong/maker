@@ -57,7 +57,7 @@
 
         &__text {
             justify-self: start;
-            max-width: 340px;
+            max-width: 21.25rem;
             text-align: left;
             margin-inline-start: 3.4375rem;
         }
@@ -72,4 +72,91 @@
         }
     }
 
+}
+
+@include mq(65em) {
+
+    .wrapper {
+        --gap:330px;
+        --max-width: 65em;
+    }
+
+    .card-container {
+ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+    }
+
+  
+
+    .card {
+
+        // &-1 {
+        //     grid-area: indulge;
+        //     grid-column: 1 / 2;
+        // }
+
+        // &-2 {
+        //     grid-area: gain;
+        //     grid-column: 2 / 3;
+        // }
+
+        // &-3 {
+        //     grid-area: choose;
+        //     grid-column: 3 / 4;
+        // }
+
+        // &-4 {
+        //     grid-area: work;
+        //     grid-column: 4 / 5;
+        // }
+       
+        &__content {
+            
+            display: flex;
+            flex-direction: column;
+            // grid-template-columns: repeat(1, 1fr);
+            place-items:start;
+            // margin-block-start: 0;
+
+            // & > img {
+            //     background-color:blue ;
+            // }
+            
+            
+        }
+
+        &__text {
+            margin-inline-start: 0;
+        }
+
+        &__title {
+            font-size: fs(400);
+            width: max-content;
+            margin-block-start: size(40);
+            margin-block-end: 23px;
+        }
+
+        &__paragraph {
+           width: 30ch;
+        }
+
+        &:nth-child( 2n ) {
+          
+            margin-inline-start: 0;
+            margin-block-start: 3.5rem;
+            
+
+        }
+
+     
+
+     
+    }
+  
+        
+    
+   
 }
