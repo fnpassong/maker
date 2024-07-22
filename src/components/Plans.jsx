@@ -1,11 +1,11 @@
- import '../sass/components/plans.scss';
+import '../sass/components/plans.scss';
 import { PlanData } from './PlanData';
 
 import figura from '../assets/icon-paid.svg';
  
  const Plans = () => {
    return (
-     <section className="plans wrapper" data-width='tablet'>
+     <section className="plans wrapper" data-width='tablet' data-ancho='desktop'>
         <h2 className="plans__title clr-secondary-thewhite">Our pricing plans</h2>
         <p className="plans__paragraph">
         We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get started.

@@ -107,11 +107,40 @@ ul {
    }
 
    .container-articles {
-      max-width:27.8125rem;
+      // max-width:27.8125rem;
       margin-inline: auto;
    }
    
 }
 
+@include mq(65rem) {
+   .wrapper[data-ancho='desktop'] {
+      --gap:520px;
+      --max-width:1440px;
+     
+   }
+
+   .plans {
+
+      &__title {
+         font-size: fs(500);
+      }
+
+      &__paragraph {
+         max-width: 33.75rem;
+         margin-inline: auto;
+         font-size: 15px;
+      }
+
+      .container-articles {
+         
+         display: flex;
+         justify-content: space-between;
+         align-items:first baseline;
+         gap: 30px;
+      }
+
+   }
+}
 
 
